@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>video accessibility</title>
+    <style>
+      h3 {margin-left: 0.5 em}
+      section {margin-left: 1 em; border: 2px solid black; background: gold}
+    </style>
+  </head>
+  <body>
+    <h1>Video:</h1>
+    <h2>Problems:</h2>
+    <p>Some users cannot hear the dialogue or sound effects clearly or at all. </p>
+    <h2>Goal</h2>
+    <p>Provide an alternative for the dialogue and sound effects</p>
+    <h2>Who does it impact:</h2>
+    <p>This affects people with hearing loss or deafness. It also happens to
+      people in a noisy place where it is hard to hear, or a quiet pace where
+      you cannot turn up the sound.</p>
+    <h2>How does it impact them?</h2>
+    <ul>
+      <li>This makes it hard to understand. </li>
+      <li>It also makes it hard to focus and engage.</li>
+    </ul>
+    <h2>Ways to solve the problem:</h2>
+    <p>Provide the dialogue and describe the sound effects in text, sign
+      language or the pictures.</p>
+    <details open="">
+      <summary>
+        <h3>Provide text that shows what is being said.</h3>
+      </summary>
+      <p>Captions are text that appears on the screen, providing the text of
+        what is being said. They can also provide a text version of sound
+        effects. They enable people to read the dialogue instead of listening.</p>
+      <p>Most video players have built-in captioning systems. The video needs to
+        have captions@@. </p>
+      <section>
+        <p> (Move this to another page) </p>
+        <h4> Writing HTML </h4>
+        <p>The captions can be linked to the video using the HTML <code>video </code>and
+          <code>source </code>elements.</p>
+        <pre>&lt;video src="fancyVid.mp4"&gt;
+  &lt;track src="captions.vtt" kind="captions"&gt;
+&lt;/video&gt;</pre>
+      </section>
+      <section>
+        <p> move this to another page - and illustrate it </p>
+        <h4> Using A third-party tool like Youtube to manage videos </h4>
+        <p>For a youtube video, captions be provided as a ... file when the
+          video is uploaded. Ther is also an automatic captioning feature - but
+          the quality is not always good.</p>
+      </section>
+      <p>This will not help people who cannot read fast enough to keep up,
+        unless they can slow down or pause the video.</p>
+      <p>Captions can be hard to read, if they are on the picture and do not
+        stand out clearly enough.</p>
+      <p>Captions on the screen cannot be read by people who cannot see clearly.
+        Caption formats that can be presented as text can still be made
+        available, e.g. through braille or through some other interface.</p>
+      <p>Reading captions can distract people from seeing the video. Then they
+        may miss important parts.</p>
+    </details>
+    <details open="">
+      <summary>
+        <h3>Provide sign language interpretation of what is being said.</h3>
+      </summary>
+      <p>Sign language videos can be played alongside, or inside, a video</p>
+    </details>
+    <details open="">
+      <summary>
+        <h3>Show in the pictures what is being said.</h3>
+      </summary>
+      <p>Make sure you don't need sound to understand the video.</p>
+    </details>
+    <details>
+      <summary>
+        <h3>Show things that sound effects communicate.</h3>
+        <h2>Testing if the problem is solved</h2>
+        <p>Can the user use the alternative provided?</p>
+        <p>To test the solution:</p>
+        <dl>
+          <dt>Turn off your sound and watch the video. Do you understand it?</dt>
+          <dd>Do you understand it? If you do, you're done. Otherwise...</dd>
+          <dt>Can you turn on captions and watch the video?</dt>
+          <dd>Do you understand it now? If so, you're done. Otherwise</dd>
+        </dl>
+        <p>To test the solution</p>
+        <p><br>
+        </p>
+        <ol>
+          <li>If you can understand the video with the sound turned off, it
+            passes.</li>
+          <li>If not, can you turn on the captions and watch the video? If you
+            understand it with captions turned on:
+            <ul>
+              <li>Your captions pass. You will still need to test whether they
+                cause other problems (contrast is poor, distracting, ...)</li>
+            </ul>
+          </li>
+        </ol>
+      </summary>
+    </details>
+    <h2>Issues under discussion:</h2>
+    <h3>Is it always necessary to caption sound?</h3>
+    <p>For example, where there is a background of birds singing, in a video of
+      a nature scene, are captions necessary or not?</p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+  </body>
+</html>
